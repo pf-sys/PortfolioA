@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Community Member Registration Portal</title>
+</head>
+<body>
+    <header>
+        <h1>Community Member Registration Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="page1.html">Home(Page 1)</a></li>
+                <li><a href="page2.html">About(Page 2)</a></li>
+                <li><a href="page3.html">Markup Guide(Page 3)</a></li>
+                <li><a href="page4.html">Register(Page 4)</a></li>
+            </ul>
+            <hr>
+        </nav>
+    </header>
+    <main>
+        <h2>Create Your Account</h2>
+        <form action="/action_page.php">
+  <fieldset>
+    <legend>Section 1: Personal Profile Information:</legend>
+    <label for="fname" type="text" placeholder="e.g., Jane Smith">Full Legal Name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="email" placeholder="e.g., jane.smith@example.com">Primary Email Address:</label>
+    <input type="text" id="email" name="email"><br><br>
+    <label for="phone" placeholder="0412-345-678">Phone Number (Format:0412-345-678)</label>
+    <input type="text" id="phone" name="phone"><br><br>
+    <label for="birthday">Date of Birth:</label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+    <label for="gender">Gender Identity:</label>
+    <select name="gender" id="gender">
+      <option value="male">Prefer not to say</option>
+      <option value="female">Female</option>
+      <option value="non-binary">Non-Binary</option>
+      <option value="other">Male</option>
+    </select>
+</form>
+</fieldset>
+        <form action="/action_page.php">
+  <fieldset>
+    <legend>Section 2: Account Security & Plan Selection:</legend>
+    <label for="uname">Preferred Username *</label>
+    <input type="text" id="uname" name="uname"><br><br>
+    <label for="pword">Account Password (Min 8 chars) *</label>
+    <input type="password" id="pword" name="pword"><br><br>
+    <label for="membership">Select Membership Tier *</label><br>
+    <label><input type="radio" name="membership" value="Community"> Community Tier Free forever. Public forums & guides.</label><br>
+    <label><input type="radio" name="membership" value="Pro"> Pro Tier ($12/mo) Workshop recordings & code reviews.</label><br>
+    <label><input type="radio" name="membership" value="Enterprise"> Enterprise ($49/mo) 1-on-1 mentorship & team support.</label>
+  </fieldset>
+</form>
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Section 3: Communication Preferences & Legal Terms:</legend>
+    
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+    </main>
+    <footer>
+        <p> &copy; 2024 My Web Project. Page 4 of 4.</p>
+    </footer>
+</body>
+</html>
