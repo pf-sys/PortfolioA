@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic Page</title>
+</head>
+<body>
+    <header>
+        <h1> HTML5 Semantic Markup & Architecture Reference Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="page1.html">Home(Page1)</a></li>
+                <li><a href="page2.html">About(Page2)</a></li>
+                <li><a href="page3.html">Markup Guide(Page3)</a></li>
+                <li><a href="page4.html">Register(Page4)</a></li>
+            </ul>
+            <hr>
+        </nav>
+    </header>
+    <main>
+        <h2> Introduction to Semantic HTML Architecture</h2>
+        <p>Semantic HTML refers to the practice of writing markup that conveys the structural meaning and intent of web content rather than its aesthetic appearance. 
+            Using accurate HTML5 tags ensures that browsers, search engine crawlers, and screen readers can parse page content correctly. 
+            When you use semantic tags like article, section, and header, you create a structured Document Object Model (DOM) tree that enhances page navigation, search engine ranking (SEO), and screen reader accessibility without requiring heavy JavaScript logic.</p>
+        <hr>
+        <h2> Core Web Development Glossary</h2>
+        <p><b>DOM (Document Object Model)</b><br>&emsp;&emsp;A platform- and language-neutral interface that treats an XML or HTML document as a tree structure.</p>
+        <p><b>Semantic HTML5</b><br>&emsp;&emsp;The practice of using tags that accurately describe the purpose of the enclosed content.</p>
+        <p><b>Accessibility & WAI-ARIA(ally)</b><br>&emsp;&emsp;Accessible Rich Internet Applications (ARIA) is a suite of attributes that define ways to make web content and applications more accessible to people with disabilities, sprecifically supplementing HTML where native semantics are insufficient.</p>
+        <p><b>Progreesive Enhancement</b><br>&emsp;&emsp;A design strategy that emphasizes core webpage content first, allowing everyone to access basic content and functionality, while delivering an enhanced experience to users with advanced browser capabilities or faster connectivity.</p>
+        <hr>
+        <h2> HTML5 Document Template Code Example</h2>
+        <div>
+            <pre>
+            <code >
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Accessible Page&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre></div>
+        <p> The code block illustrates a valid, accessible HTML5 document boilerplate containing metadata, structural sections, and fallback elements:</p>
+        <ul>
+                <li>Doctype declaration</li>
+                <li>Language specified as English</li>
+                <li>Head metadata including charset UTF-8 and responsive viewport</li>
+                <li>Accessible page title</li>
+                <li>Skip-to-content navigation links</li>
+                <li>Main article with heading and content paragraph</li>
+                <li>Footer with copyright notice</li>
+            </ul>
+            <h3> Interactive Best-Practices Reference</h3><ol>
+           <li>HTML Markup Structure & Nesting Guidelines</li>
+            <p>Always ensure tags are closed properly and nested logically without visual overlapping. 
+                Never place block-level elements (such as div or p) inside inline elements like span or a. 
+                Maintain lowercase tag names for consistency across build tools.
+            </p>
+            <li>Image Accessibility & Test Alternatives</li>
+            <p>Every non-decorative img element must include a descriptive alt attribute explaining the visual content.
+                Decorative images should use empty string attributes (alt="") to instruct screen readers to bypass them silently.
+            </p>
+            <li>Table Structuring Standards</li>
+            <p>Avoid using HTML tables for page layouts.
+                Reserve table elements strictly for tabular data, 
+                and always include explicit header cells (th) with scope="col" or scope="row" 
+                attributes to facilitate assistive device navigation.
+            </p>
+          </ol>
+          <h3>Semantic Element Comparison Matrix</h3>
+          <p><b>Header Tag:</b>
+            <br>
+            &emsp;&emsp;&emsp;Display Mode: Block Primary Function:
+            <br>
+          <b>Navigation Tag:</b>
+            <br>
+            &emsp;&emsp;&emsp;Display Mode: Block Primary Function:
+            <br>
+          <b>Main Tag:</b>
+            <br>
+            &emsp;&emsp;&emsp;Display Mode: Block Primary Function:
+            <br>
+          <b>Article Tag:</b>
+            <br>
+            &emsp;&emsp;&emsp;Display Mode: Block Primary Function:
+            <br>
+          <b>Mark Tag:</b>
+            <br>
+            &emsp;&emsp;&emsp;Display Mode: Inline Primary Function:
+            <br>
+            <br>
+        Summary: Semantic tags replace non-descriptive div container for cleaner, native document pairing.
+          </p>
+    </main>
+     <a href="page4.html">Proceed to Task 4: Complete Member Registration Form &#8594;</a>
+            <hr>
+            <p>&copy; 2026 My Web Project. Page 3 of 4.</p>

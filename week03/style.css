@@ -1,0 +1,16 @@
+h1 {
+   font-family:"Times new roman", times, serif;
+   font-size: 100px;
+   color:aquamarine;
+}
+h3 {
+    font-family:"comic sans ms", times, serif;
+    font-size: 100px;
+    color:red;
+}
+p {
+    font-family:"calibri", times, serif;
+    font-size: 50px;
+    font-style:italic;
+    color:rgb(173, 66, 255);
+}
