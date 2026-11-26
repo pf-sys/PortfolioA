@@ -22,20 +22,19 @@
         <form action="/action_page.php">
   <fieldset>
     <legend>Section 1: Personal Profile Information:</legend>
-    <label for="fname" type="text" placeholder="e.g., Jane Smith">Full Legal Name:</label>
-    <input type="text" id="fname" name="fname"><br><br>
-    <label for="email" placeholder="e.g., jane.smith@example.com">Primary Email Address:</label>
-    <input type="text" id="email" name="email"><br><br>
-    <label for="phone" placeholder="0412-345-678">Phone Number (Format:0412-345-678)</label>
-    <input type="text" id="phone" name="phone"><br><br>
+    <label for="fname">Full Legal Name:</label> 
+    <input type="text" id="fname" name="fname" placeholder="e.g., Jane Smith"> Enter your first and last name as you would like them to appear on certificates.<br>
+    <label for="email">Primary Email Address:</label> 
+    <input type="text" id="email" name="email" placeholder="e.g., jane.smith@example.com"> Your verification link and security alerts will be sent here.<br>
+    <label for="phone">Phone Number (Format:0412-345-678)</label>
+    <input type="text" id="phone" name="phone" placeholder="0412-345-678"><br> Optional. Used solely for two-factor authentication (2FA).
     <label for="birthday">Date of Birth:</label>
-    <input type="date" id="birthday" name="birthday"><br><br>
+    <input type="date" id="birthday" name="birthday"><br>
     <label for="gender">Gender Identity:</label>
     <select name="gender" id="gender">
       <option value="male">Prefer not to say</option>
       <option value="female">Female</option>
-      <option value="non-binary">Non-Binary</option>
-      <option value="other">Male</option>
+      <option value="non-binary">Male</option>
     </select>
 </form>
 </fieldset>
@@ -43,9 +42,9 @@
   <fieldset>
     <legend>Section 2: Account Security & Plan Selection:</legend>
     <label for="uname">Preferred Username *</label>
-    <input type="text" id="uname" name="uname"><br><br>
+    <input type="text" id="uname" name="uname" placeholder="janesmith_dev"><br>
     <label for="pword">Account Password (Min 8 chars) *</label>
-    <input type="password" id="pword" name="pword"><br><br>
+    <input type="password" id="pword" name="pword"><br>
     <label for="membership">Select Membership Tier *</label><br>
     <label><input type="radio" name="membership" value="Community"> Community Tier Free forever. Public forums & guides.</label><br>
     <label><input type="radio" name="membership" value="Pro"> Pro Tier ($12/mo) Workshop recordings & code reviews.</label><br>
@@ -55,10 +54,26 @@
 <form action="/action_page.php">
   <fieldset>
     <legend>Section 3: Communication Preferences & Legal Terms:</legend>
-    
-    <input type="submit" value="Submit">
+     <label for="Role">Primary Occuption / Professional Role:</label>
+    <select name="Role" id="Role">
+      <option value="Full-time Student">Full-time Student</option>
+      <option value="Part-time Student">Part-time Student</option>
+      Subscriptions & Email Updates
+      <input type="checkbox" id="weekly" name="weekly" value="Weekly">
+      <label for="weekly"> Weekly Technical Newsletter (Curated HTML/CSS articles)</label>
+      <input type="checkbox" id="live web" name="live web" value="live web">
+      <label for="live web"> Upcoming Live Webinar Announcements & Invites</label>
+      <input type="checkbox" id="product notes" name="product notes" value="product notes">
+      <label for="product notes"> Product Release Notes & Platform Security Updates</label><br>
+      Short Bio / Learning Goals <form> <textarea rows="4" cols="33" placeholder="Tell us briefly about your web development goals or interests."> </textarea></form>
+      <br>
+      <input type="checkbox" id="consent" name="consent" value="Consent">
+      <label for="consent"> I have read and agree to the <a href="/terms">Terms of Service</a> and Privacy Policy *</label>
+    </select>
   </fieldset>
 </form>
+<button> Submit Account Application</button> <button> Clear Form Entries</button>
+<br><a href="page1.html"> Return to Home Landing Page (Page 1)</a> Step 4 of 4
     </main>
     <footer>
         <p> &copy; 2024 My Web Project. Page 4 of 4.</p>
